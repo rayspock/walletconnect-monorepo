@@ -232,7 +232,7 @@ class Connector implements IConnector {
   get clientMeta () {
     let clientMeta: IClientMeta | null = this._clientMeta
     if (!clientMeta) {
-      clientMeta = this._clientMeta = getMeta()
+      clientMeta = getMeta();
     }
     return clientMeta
   }
