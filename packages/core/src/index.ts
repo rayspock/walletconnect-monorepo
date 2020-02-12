@@ -22,7 +22,7 @@ import {
   parseTransactionData,
   convertArrayBufferToHex,
   convertHexToArrayBuffer,
-  getMeta,
+  // getMeta,
   payloadId,
   uuid,
   formatRpcError,
@@ -230,11 +230,11 @@ class Connector implements IConnector {
   }
 
   get clientMeta () {
-    let clientMeta: IClientMeta | null = this._clientMeta
-    if (!clientMeta) {
-      clientMeta = getMeta()
-    }
-    return clientMeta
+    // let clientMeta: IClientMeta | null = this._clientMeta
+    // if (!clientMeta) {
+    //   clientMeta = getMeta()
+    // }
+    return this._clientMeta
   }
 
   set peerMeta (value) {
